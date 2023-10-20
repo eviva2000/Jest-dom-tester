@@ -14,7 +14,7 @@ export default function Options({ optionType }) {
       console.log(error);
     }
   };
-  const ItemComponent = optionType === "scoop" ? ScoopOption : null;
+  const ItemComponent = optionType === "scoops" ? ScoopOption : null;
   const optionItems = items.map((item, index) => {
     return (
       <ItemComponent key={index} name={item.name} imagePath={item.imagePath} />
