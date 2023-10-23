@@ -23,7 +23,7 @@ const SummaryForm = () => {
   );
   return (
     <Form>
-      <Form.Group contrilId="terms">
+      <Form.Group controlId="terms">
         <Form.Check
           type="checkbox"
           label={checkboxLabel}
