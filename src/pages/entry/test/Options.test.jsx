@@ -22,7 +22,7 @@ test("display image for each topping option from server (msw)", async () => {
   });
   expect(toppingImages).toHaveLength(2);
 
-  //confirm alt text for iamges
+  //confirm alt text for imges
   const altText = toppingImages.map((image) => image.alt);
   expect(altText).toEqual(["Cherries topping", "M&Ms topping"]);
 });
