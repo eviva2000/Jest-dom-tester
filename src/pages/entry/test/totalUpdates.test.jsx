@@ -1,11 +1,10 @@
 // This is functioning test, we wont test any component
-import { screen, render } from "@testing-library/react";
+import { screen, render } from "../../../test-utils/testing-library-utils";
 import userEvent from "@testing-library/user-event";
 import Options from "../Options";
-import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
 test("update scoops subtotal when scoops change", async () => {
   const user = userEvent.setup();
-  render(<Options optionType="scoops" />, { wrapper: OrderDetailsProvider });
+  render(<Options optionType="scoops" />);
 
   // make sure scoops start out from 0.00
   // we are using partial match for 'getByText' method
